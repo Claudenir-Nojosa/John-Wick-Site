@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/build/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>John Wick Project</title>
+</head>
+<body>
+    <div class="conteudo">
+        <div class="header sticky-top">
+            <header class="navbar navbar-expand-lg navbar-dark shadow-5-strong p-4" id="cabecalho">
+                <div class="container-fluid">
+                    <h1 class="navbar-brand m-0 section-title">
+                        <img src="/source/images/logo.png" alt="John Wick Logo">
+                    </h1>
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                        <ul class="nav nav-pills d-block d-md-flex justify-content-end">
+                            <li class="nav-item fw-bold">
+                                <a href="#sobre" class="nav-link active">
+                                    Sobre
+                                </a>
+                            </li>
+                            <li class="nav-item fw-bold">
+                                <a href="#curiosidades" class="nav-link">
+                                    Curiosidades
+                                </a>
+                            </li>
+                            <li class="nav-item fw-bold">
+                                <a href="#personagens" class="nav-link">
+                                    Personagens
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+            <section class="hero">
+                <div class="hero_capa"></div>
+                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" loading="lazy" class="hero_video">
+                    <source src="/source/images/hero_section.mp4" type="video/mp4">
+                </video>        
+                <div class="hero_conteudo h-100 position-relative">
+                    <div class="d-flex h-100 align-items-center w-100">
+                        <div class="texto">
+                            <h1 class="hero_texto fw-bold mb-4"><span class="textoBranco">John Wick</span> é como um whisky especial com muito gelo.</h1>
+                            <p class="lead mb-4">Sua coloração é <span class="textoBranco">vermelho sangue</span>, perfeito para o paladar de quem aprecia uma boa ação.</p>
+                            <a href="https://www.primevideo.com/detail/John-Wick-Chapter-3-Parabellum/0O733T1H6OITZW94X3B2NU9HNN?_encoding=UTF8&language=pt_BR" class="mt-2 btn btn-lg btn-outline-light" target= "_blank" role="button">Pedir um copo</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#sobre" class="hero-botao-saibaMais">
+                Saiba mais
+                </a>
+            </section>
+            <section class="mb-5 mt-5" id="sobre">
+                <div class="container">
+                    <div class="sobre row mt-4 mb-5">
+                        <div class="conteudoSobre col-md-7">
+                            <span>Sobre</span>
+                            <h1 class="h2 mb-4 fw-bold">Uma <span class="textoLaranja">grande obra</span></h1>
+                            <p class="mb-4">Com o preço por sua cabeça cada vez maior, o lendário assassino de aluguel John Wick leva sua luta contra o High Table global enquanto procura os jogadores mais poderosos do submundo, de Nova York a Paris, do Japão a Berlim.</p>
+                            <a href="https://pt.wikipedia.org/wiki/John_Wick" target= "_blank">Leia mais sobre<i class="bi bi-arrow-right"></i></a>
+                        </div>
+                        <div class="imagemSobre col-md-5">
+                            <img src="/source/images/sobre.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="curiosidades">
+                <div class="row">
+                    <div class="carousel col-md-12 mt-5 mb-5">
+                        <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="3300">
+                                    <img class="d-block w-100" src="/source/images/slide1.jpg" alt="">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3300">
+                                    <img class="d-block w-100" src="/source/images/slide2.jpg" alt="">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3300">
+                                    <img class="d-block w-100" src="/source/images/slide3.jpg" alt="">
+                                </div>
+                            </div>
+                            <button data-bs-target="#carousel"  data-bs-slide="prev" type="button"class="carousel-control-prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button data-bs-target="#carousel"  data-bs-slide="next" type="button"class="carousel-control-next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                            <div class="carousel-indicators">
+                                <button class="active" type="button" data-bs-target="#carousel" data-bs-slide-to="0"></button>
+                                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="curiosidades row mt-2 mb-5">
+                    <div class="col-md-4">
+                        <div class="card text-bg-dark">
+                            <img class="d-block w-100 rounded"src="/source/images/curiosidade1.jpg" alt="">
+                            <div class="card-img-overlay">
+                                <h4 class="card-title">John Wick teria 75 anos</h4>
+                                <p class="card-text">Originalmente, enquanto escrevia o roteiro de “Scorn”, Derek Kolstad imaginou John Wick como sendo um homem bem mais velho. Wick, na mente de Kolstad, era um idoso de 75 anos, embora ainda muito ágil, aposentado há 25 anos.</p>
+                                <p class="card-text">Quando Reeves entrou no projeto, no entanto, isso precisou ser modificado. Kolstad, ansioso para ver seu roteiro ganhar vida, aceitou a mudança sem problemas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-bg-dark">
+                            <img class="d-block w-100 rounded" src="/source/images/curiosidade2.jpg" alt="">
+                            <div class="card-img-overlay">
+                                <h4 class="card-title">O hobby de John Wick</h4>
+                                <p class="card-text">Embora os interesses de John Wick na vida pareçam estar principalmente restritos a matar pessoas de maneiras criativas, ele aparentemente também é capaz de se expressar por meios não violentos.</p>
+                                <p class="card-text">De acordo com Keanu Reeves, o roteiro original do primeiro John Wick incluía uma cena em que o protagonista trabalhava na restauração de velhos livros encadernados em couro. Esse seria o seu hobby, e a cena chegou a ser filmada, embora tenha sido cortada da versão final.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-bg-dark">
+                            <img class="d-block w-100 rounded" src="/source/images/curiosidade3.jpg" alt="">
+                            <div class="card-img-overlay">
+                                <h4 class="card-title">O cachorro não deveria morrer</h4>
+                                <p class="card-text ">Embora tudo na série John Wick tenha sido desencadeado pelo assassinato sem sentido de sua cadela Daisy, os executivos da Lionsgate estavam apreensivos com esse detalhe específico da trama.</p>
+                                <p class="card-text">Como rege a lógica de Hollywood, o público odeia ver animais morrendo. Os detalhes estavam sem uma decisão até uma exibição prévia, na qual o público entendeu que seria necessário algo muito sério para tirar Wick da aposentadoria.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="personagens" class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="section-title text-center mb-5">Personagens</h2>
+                    </div>
+                    <div class="row">
+                        <aside class="col-md-2">
+                            <nav class="nav nav-pills flex-column nav-personagens">
+                                <button data-bs-toggle="tab" data-bs-target="#johnWick"class="nav-link fw-bold text-start text-colored active"type="button">John Wick</button>
+                                <button data-bs-toggle="tab" data-bs-target="#daisy"class="nav-link fw-bold text-start text-colored"type="button">Daisy</button>
+                                <button data-bs-toggle="tab" data-bs-target="#boweryKing"class="nav-link fw-bold text-start text-colored"type="button">Bowery King</button>
+                            </nav>
+                        </aside>
+                        <div class="col-md-10">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="johnWick">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <img class="d-block w-100" src="/source/images/personagemJohn.jpg" alt="Personagem John Wick">
+                                            <h5 class="text-colored-brown fw-bold mt-2">John Wick</h5>
+                                            <p>Perde sua esposa Helen para uma doença terminal, e recebe um cachorro beagle chamado Daisy, por instruções de Helen, para ajudá-lo a lidar com sua morte. No entanto, um trio de gangsters russos insitem em comprar seu carro, mas John se recusa a vendê-lo. Como vingança, os russos vão até a casa de John e matam seu cachorrinho, o enfurecendo completamente.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="daisy">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <img class="d-block w-100" src="/source/images/personagemDaisy.jpg" alt="Personagem Daisy">
+                                            <h5 class="text-colored-brown fw-bold mt-2">Daisy</h5>
+                                            <p>Foi o animal de estimação de John, que a ganhou como presente póstumo de Helen. Daisy foi inspirada no caso real da cadela Daisy, labrador de estimação do ex-fuzileiro Marcus Lutrell. Daisy ajudava Marcus a lidar com traumas de guerra e também sofreu agressões que levaram a sua morte. No dia do acontecimento, Marcus pegou sua arme e perseguiu os agressores, mas ele conseguiu conter sua raiva e chamou a polícia.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="boweryKing">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <img class="d-block w-100" src="/source/images/personagemBowery.jpg" alt="Personagem Bowery King">
+                                            <h5 class="text-colored-brown fw-bold mt-2">Bowery King</h5>
+                                            <p>Pouco se tem de informação sobre o passado de Bowery King. Em um certo momento da vida dele, foi alvo do John Wick mas conseguiu sobreviver apesar de ser perfurado duas vezes pelo Wick. Pouco tempo depois, ele tomou conta de "The Soup Kitchen", um abrigo para sem-tetos, onde ele construiu o seu império subterrâneo.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
